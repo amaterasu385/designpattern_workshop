@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bridgeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Bridge structure -->
+  <!-- Left pillar (Abstraction) -->
+  <rect x="15" y="30" width="8" height="40" fill="url(#bridgeGradient)" rx="2"/>
+  
+  <!-- Right pillar (Implementor) -->
+  <rect x="77" y="30" width="8" height="40" fill="url(#bridgeGradient)" rx="2"/>
+  
+  <!-- Bridge deck -->
+  <rect x="15" y="45" width="70" height="6" fill="url(#bridgeGradient)" rx="3"/>
+  
+  <!-- Connection arrows/signals -->
+  <g stroke="url(#bridgeGradient)" stroke-width="2" fill="none">
+    <!-- Signal waves from left to right -->
+    <path d="M28 35 Q35 30 42 35 T56 35" opacity="0.8"/>
+    <path d="M28 40 Q35 35 42 40 T56 40" opacity="0.6"/>
+    <path d="M28 55 Q35 60 42 55 T56 55" opacity="0.8"/>
+    <path d="M28 60 Q35 65 42 60 T56 60" opacity="0.6"/>
+  </g>
+  
+  <!-- Abstract icons -->
+  <!-- Remote control icon (left side) -->
+  <g fill="white" transform="translate(10, 15)">
+    <rect width="18" height="12" rx="2" fill="#4f46e5"/>
+    <circle cx="6" cy="4" r="1.5" fill="white"/>
+    <circle cx="12" cy="4" r="1.5" fill="white"/>
+    <rect x="4" y="7" width="10" height="1" fill="white"/>
+    <rect x="4" y="9" width="6" height="1" fill="white"/>
+  </g>
+  
+  <!-- Device icons (right side) -->
+  <g transform="translate(75, 12)">
+    <!-- TV -->
+    <rect width="12" height="8" rx="1" fill="#10b981"/>
+    <rect x="2" y="2" width="8" height="4" rx="0.5" fill="white"/>
+    <rect x="5" y="8" width="2" height="2" fill="#10b981"/>
+    
+    <!-- Radio waves -->
+    <g stroke="#10b981" stroke-width="1" fill="none" opacity="0.5">
+      <path d="M14 2 Q18 4 14 6"/>
+      <path d="M14 1 Q20 4 14 7"/>
+    </g>
+  </g>
+  
+  <!-- Connection indicator in center -->
+  <circle cx="50" cy="48" r="3" fill="#f59e0b" opacity="0.9"/>
+  <circle cx="50" cy="48" r="1.5" fill="white"/>
+</svg>
