@@ -282,7 +282,7 @@ body {
     font-weight: bold;
     font-size: 0.875rem;
     animation: shake 2s infinite;
-    cursor: pointer;
+    cursor: default;
     transition: var(--transition);
 }
 
@@ -1541,4 +1541,5 @@ body {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border: 0;
+
 }
